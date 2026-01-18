@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Current Affairs Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Background Music -->
+    <audio id="background-music" loop preload="auto">
+        <source src="https://cdn.pixabay.com/audio/2022/05/27/audio_1808fbf07a.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Music Toggle Button -->
+    <button id="music-toggle" class="music-toggle" aria-label="Toggle music">
+        <svg id="music-icon-on" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+        </svg>
+        <svg id="music-icon-off" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="display:none;">
+            <path d="M12 3v9.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z" opacity="0.5"/>
+            <line x1="4" y1="4" x2="20" y2="20" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+    </button>
+
+    <!-- Sidebar Toggle (Mobile) -->
+    <button id="sidebar-toggle" class="sidebar-toggle" aria-label="Toggle menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 12h18M3 6h18M3 18h18"/>
+        </svg>
+    </button>
+
+    <!-- Sidebar -->
+    <aside id="sidebar" class="sidebar">
+        <div class="sidebar-header">
+            <h2 class="sidebar-title">Menu</h2>
+            <button id="sidebar-close" class="sidebar-close" aria-label="Close menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 6L6 18M6 6l12 12"/>
+                </svg>
+            </button>
+        </div>
+        <nav class="sidebar-nav">
+            <button class="nav-item active" data-mode="manual">
+                <span class="nav-icon">🎯</span>
+                <span class="nav-content">
+                    <span class="nav-title">Manual Quiz</span>
+                    <span class="nav-desc">Answer at your own pace</span>
+                </span>
+            </button>
+            <button class="nav-item" data-mode="auto">
+                <span class="nav-icon">⚡</span>
+                <span class="nav-content">
+                    <span class="nav-title">Auto-Slide Quiz</span>
+                    <span class="nav-desc">Timed questions</span>
+                </span>
+            </button>
+            <button class="nav-item" data-mode="facts-manual">
+                <span class="nav-icon">💡</span>
+                <span class="nav-content">
+                    <span class="nav-title">Facts (Manual)</span>
+                    <span class="nav-desc">Browse at your pace</span>
+                </span>
+            </button>
+            <button class="nav-item" data-mode="facts-auto">
+                <span class="nav-icon">🎬</span>
+                <span class="nav-content">
+                    <span class="nav-title">Facts (Auto-Slide)</span>
+                    <span class="nav-desc">Automatic slideshow</span>
+                </span>
+            </button>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main id="main-content" class="main-content">
+        <!-- Welcome Screen -->
+        <div id="welcome-screen" class="screen active" role="main" aria-label="Welcome screen">
+        <div class="particles" aria-hidden="true"></div>
+        <div class="welcome-content">
+            <div class="app-icon" aria-hidden="true">
+                <div class="icon-ring"></div>
+                <div class="icon-center">
+                    <span class="icon-text" id="welcome-icon">Q</span>
+                </div>
+            </div>
+            <h1 class="app-title" id="welcome-title">Current Affairs</h1>
+            <p class="app-subtitle" id="welcome-subtitle">Test your knowledge with quick quizzes</p>
+            <div class="stats-preview" id="stats-preview" aria-label="Quiz information">
+                <div class="stat-badge">
+                    <span class="stat-emoji" aria-hidden="true">⚡</span>
+                    <span class="stat-text" id="stat-timer">15s per question</span>
+                </div>
+                <div class="stat-badge">
+                    <span class="stat-emoji" aria-hidden="true">🎯</span>
+                    <span class="stat-text" id="stat-questions">10 questions</span>
+                </div>
+            </div>
+            <button id="start-btn" class="primary-btn" aria-label="Start quiz">
+                <span id="start-btn-text">Start Quiz</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Quiz Screen -->
+    <div id="quiz-screen" class="screen" role="main" aria-label="Quiz screen">
+        <div class="quiz-wrapper">
+            <!-- Header -->
+            <div class="quiz-header">
+                <div class="progress-bar" role="progressbar" aria-label="Quiz progress" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+                    <div id="progress-fill" class="progress-fill"></div>
+                </div>
+                <div class="quiz-info" aria-label="Quiz statistics">
+                    <div class="info-item">
+                        <span class="info-label">Question</span>
+                        <span id="question-number" class="info-value" aria-live="polite">1/10</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Score</span>
+                        <span id="current-score" class="info-value" aria-live="polite">0</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Timer -->
+            <div class="timer-wrapper" aria-label="Time remaining">
+                <svg class="timer-ring" viewBox="0 0 120 120" aria-hidden="true">
+                    <circle class="timer-bg" cx="60" cy="60" r="54"></circle>
+                    <circle id="timer-circle" class="timer-progress" cx="60" cy="60" r="54"></circle>
+                </svg>
+                <div class="timer-content">
+                    <div id="timer-text" class="timer-value" aria-live="polite">15</div>
+                    <div class="timer-label">sec</div>
+                </div>
+            </div>
+
+            <!-- Question Card -->
+            <div class="question-wrapper">
+                <div id="question-category" class="category-badge" aria-label="Category">Current Affairs</div>
+                <h2 id="question-text" class="question-text" role="heading" aria-level="2"></h2>
+            </div>
+
+            <!-- Options -->
+            <div id="options-container" class="options-wrapper" role="group" aria-label="Answer options">
+                <!-- Options will be generated by JS -->
+            </div>
+
+            <!-- Feedback Message -->
+            <div id="answer-feedback" class="feedback-message" role="alert" aria-live="assertive">
+                <span id="feedback-icon" class="feedback-icon"></span>
+                <span id="feedback-text" class="feedback-text"></span>
+            </div>
+
+            <!-- Next Button -->
+            <button id="next-btn" class="next-btn" style="display: none;" aria-label="Go to next question">
+                Next Question
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Results Screen -->
+    <div id="results-screen" class="screen" role="main" aria-label="Results screen">
+        <div class="results-content">
+            <div class="trophy-wrapper" aria-hidden="true">
+                <div class="trophy-icon">🏆</div>
+                <div class="trophy-glow"></div>
+            </div>
+            <h2 class="results-title">Quiz Complete!</h2>
+
+            <div class="score-circle-wrapper" aria-label="Your score">
+                <svg class="score-circle" viewBox="0 0 200 200" aria-hidden="true">
+                    <circle class="score-bg" cx="100" cy="100" r="85"></circle>
+                    <circle id="score-progress" class="score-progress" cx="100" cy="100" r="85"></circle>
+                </svg>
+                <div class="score-text">
+                    <div id="final-percentage" class="final-percentage" aria-live="polite">0%</div>
+                    <div class="final-label">Score</div>
+                </div>
+            </div>
+
+            <div class="results-stats" aria-label="Quiz statistics">
+                <div class="result-stat correct-stat">
+                    <div class="stat-icon" aria-hidden="true">✓</div>
+                    <div id="correct-count" class="stat-number" aria-label="Correct answers">0</div>
+                    <div class="stat-label">Correct</div>
+                </div>
+                <div class="result-stat wrong-stat">
+                    <div class="stat-icon" aria-hidden="true">✗</div>
+                    <div id="wrong-count" class="stat-number" aria-label="Wrong answers">0</div>
+                    <div class="stat-label">Wrong</div>
+                </div>
+            </div>
+
+            <div class="results-message" id="results-message" aria-live="polite"></div>
+
+            <div class="results-actions">
+                <button id="restart-btn" class="primary-btn" aria-label="Restart quiz">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                        <path d="M1 4v6h6M23 20v-6h-6"/>
+                        <path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"/>
+                    </svg>
+                    <span>Try Again</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Facts Screen -->
+    <div id="facts-screen" class="screen" role="main" aria-label="Facts screen">
+        <div class="facts-background-animation"></div>
+        <div class="facts-wrapper">
+            <div class="facts-header">
+                <h2 class="facts-title">Amazing Facts</h2>
+            </div>
+
+            <div class="fact-counter">
+                <span id="current-fact">1</span>/<span id="total-facts">10</span>
+            </div>
+
+            <div class="fact-content">
+                <div class="fact-category" id="fact-category">Category</div>
+                <div class="fact-icon" id="fact-icon">💡</div>
+                <div class="fact-question" id="fact-question">Question goes here?</div>
+                <div class="fact-answer" id="fact-answer">Answer will appear here when you tap to reveal.</div>
+                <button id="reveal-answer-btn" class="reveal-btn">Tap to Reveal Answer</button>
+            </div>
+
+            <div class="fact-navigation">
+                <button id="prev-fact-btn" class="nav-fact-btn" aria-label="Previous fact">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <path d="M15 18l-6-6 6-6"/>
+                    </svg>
+                </button>
+                <button id="next-fact-btn" class="nav-fact-btn" aria-label="Next fact">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <path d="M9 18l6-6-6-6"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    </main>
+
+    <!-- SVG Definitions for Gradients -->
+    <svg width="0" height="0" style="position: absolute; width: 0; height: 0; visibility: hidden;" aria-hidden="true">
+        <defs>
+            <linearGradient id="timer-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#818cf8;stop-opacity:1" />
+            </linearGradient>
+            <linearGradient id="score-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#34d399;stop-opacity:1" />
+            </linearGradient>
+        </defs>
+    </svg>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

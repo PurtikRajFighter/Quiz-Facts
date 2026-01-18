@@ -1,0 +1,14 @@
+# Amazing Facts
+# Format: F[number]|Category|Question|Answer
+
+F1|Space|How long does it take for light from the Sun to reach Earth?|It takes approximately 8 minutes and 20 seconds for sunlight to travel from the Sun to Earth, covering a distance of about 93 million miles (150 million kilometers).
+F2|History|What is the oldest continuously inhabited city in the world?|Damascus, Syria is widely considered the oldest continuously inhabited city in the world, with evidence of habitation dating back to around 11,000 years ago.
+F3|Nature|How many hearts does an octopus have?|An octopus has three hearts! Two pump blood to the gills, while the third pumps blood to the rest of the body. Interestingly, the heart that delivers blood to the body stops beating when the octopus swims.
+F4|Technology|Who invented the World Wide Web?|Sir Tim Berners-Lee invented the World Wide Web in 1989 while working at CERN. He created the first web browser and web server, and made the technology freely available to everyone.
+F5|Geography|Which country has the most islands in the world?|Sweden has the most islands in the world with approximately 267,570 islands. However, only about 1,000 of them are inhabited.
+F6|Science|What is the hardest natural substance on Earth?|Diamond is the hardest natural substance on Earth. It ranks 10 on the Mohs hardness scale and can only be scratched by another diamond.
+F7|Animals|What is the fastest land animal?|The cheetah is the fastest land animal, capable of reaching speeds up to 70 mph (112 km/h) in short bursts covering distances up to 1,600 feet.
+F8|Ocean|How much of Earth's oxygen comes from the ocean?|Scientists estimate that 50-80% of Earth's oxygen production comes from the ocean, primarily from phytoplankton, which are microscopic marine plants.
+F9|Human Body|How many bones does a baby have compared to an adult?|Babies are born with about 270 bones, while adults have 206. As babies grow, many of their bones fuse together to form larger, stronger bones.
+F10|Culture|Which language has the most native speakers in the world?|Mandarin Chinese has the most native speakers in the world, with over 918 million people speaking it as their first language.
+

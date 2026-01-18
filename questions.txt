@@ -1,0 +1,55 @@
+# Quiz Questions
+Q1|National|Diwali (Deepavali) was added to which UNESCO list in Dec 2025?|World Heritage Sites|Intangible Cultural Heritage|Biosphere Reserves|Representative List of ICH|4
+Q2|International|India was re-elected to which UN-linked body in Dec 2025?|UN Security Council|UNESCO Executive Board|World Bank Board|ILO Governing Body|2
+Q3|International|India secured highest votes to re-enter which maritime council?|IMO Council|IMF Board|WTO General Council|UN ECOSOC|1
+Q4|Economy|In Nov 2025, UPI transactions surged by what approximate %?|10%|23%|35%|50%|2
+Q5|Economy|Which institution signed an $800M loan pact with India?|World Bank|ADB|IMF|AIIB|2
+Q6|National|Which airline faced massive flight cancellations in Dec 2025?|Air India|IndiGo|Vistara|SpiceJet|2
+Q7|National|The IndiGo disruption saw approx how many cancellations at peak?|~1600|~500|~2500|~300|1
+Q8|National|The VB-G RAM G Act replaced which Indian scheme?|PM-KISAN|MGNREGA|National Rural Health Mission|JEE Main|2
+Q9|National|Which city got a new district carved out in Dec 2025?|Karnal|Hansi|Pune|Noida|2
+Q10|National|Delhi’s AQI reached what category in mid-Dec 2025?|Moderate|Poor|Severe|Good|3
+Q11|National|Which state achieved 100% electoral roll digitization?|Gujarat|Rajasthan|Punjab|Kerala|2
+Q12|Science & Tech|Which Indian space org launched the heavy LVM3-M6 with BlueBird-2?|ISRO|NASA|ESA|Roscosmos|1
+Q13|Science & Tech|ISRO tested which system for Gaganyaan safety?|Parachute system|Rocket booster|Landing radar|Solar panels|1
+Q14|National|India’s first “Gen Z Post Office” was inaugurated in which UT?|Goa|J&K|Puducherry|Chandigarh|2
+Q15|National|Which festival gathering had ~660m pilgrims in 2025?|Pushkar Fair|Prayag Maha Kumbh|Holi Festival|Ellora Festival|2
+Q16|International|Which country’s chancellor was set to visit India in Jan 2026?|France|USA|Germany|Japan|3
+Q17|International|PM Modi received highest civilian honour from which country?|Ethiopia|UK|Japan|Russia|1
+Q18|International|Which Middle Eastern king did PM Modi meet in 2025?|King Salman|King Abdullah II|King Hamad|Sheikh Tamim|2
+Q19|World Politics|Which South Asian FTA was finalized in Dec 2025?|India-China FTA|India-UK FTA|India-New Zealand FTA|India-Bangladesh FTA|3
+Q20|Defense|Mission Sudarshan Chakra relates to strengthening which sector?|Agriculture|Defense R&D|Education|Tourism|2
+Q21|Governance|Which bill opened India’s civil nuclear sector to private firms?|SHANTI Bill|Nuclear Privatization Bill|Energy Reform Bill|Atomic Power Act|1
+Q22|National|Which annual observance marks victory in Indo-Pak 1971 War?|Vijay Diwas|Independence Day|Republic Day|Army Day|1
+Q23|National|Railways announced passanger fare hike effective from when?|Dec 26, 2025|Jan 1, 2026|Nov 15, 2025|Oct 1, 2025|1
+Q24|Economy|India became which largest economy according to year-end 2025?|3rd|4th|5th|6th|2
+Q25|Tech|Which US company promised ~$17.5B AI investment in India?|Google|Amazon|Microsoft|Meta|3
+Q26|Economy|The INR crossed which psychological level vs USD in Dec 2025?|85|88|91|95|3
+Q27|National|Which civil defence exercise was held in 244 districts in May 2025?|Operation Abhyaas|Operation Shield|Operation Suraksha|Operation Rakshak|1
+Q28|International|Bangladesh unrest in Dec 2025 involved protests after the death of a?|Cricket star|Political leader|Muslim cleric|Actor|2
+Q29|Sports|India won its maiden world team title in which sport in Dec 2025?|Badminton|Squash|Hockey|Cricket|2
+Q30|Policy|DoT mandated SIM-binding for which apps to cut digital fraud?|Messaging apps|Banking apps|Shopping apps|Travel apps|1
+Q31|National|Which digital rollout is India first to prioritise by NFAP 2025?|5G|6G|Wi-Fi 7|4G upgrade|2
+Q32|Governance|Who was sworn in as India’s Chief Information Commissioner?|Raj Kumar Goyal|Ajit Doval|Sergio Gor|Ramesh Abhishek|1
+Q33|Social|Which folk dance gained global praise at a UNESCO event?|Bhangra|Gedī|Garba|Kathak|2
+Q34|International|US moved to end which visa system in 2025?|H-1B random lottery|F-1 student quota|EB-5 investor visa|H-4 work permit|1
+Q35|Economy|Which state will get solar irrigation with ADB funds?|Assam|Maharashtra|Punjab|Rajasthan|2
+Q36|National|Which bill increased rural guaranteed workdays to 125?|VB-G RAM G|MGNREGA|RERA|NEET Act|1
+Q37|International|US nominated whom as ambassador to India in 2025?|Sergio Gor|John Smith|Jane Doe|Michael Flynn|1
+Q38|National|Which national airport terminal was inaugurated in Assam?|Bagdogra|Guwahati GAIAL|Lokapriya Gopinath Bardoloi Intl|Chennai Intl|3
+Q39|Science|Which country partnered India to establish data centre & UN training?|Ethiopia|China|Brazil|South Africa|1
+Q40|International|Which global forum was hosted in Mumbai in Dec 2025?|World Trade Org|World Hindu Economic Forum|UN Climate Summit|G20|2
+Q41|Environment|International Cheetah Day focuses on conservation of which animal?|Tiger|Elephant|Cheetah|Rhino|3
+Q42|National|Which city’s airport got a major new terminal building?|Guwahati|Mumbai|Lucknow|Hyderabad|1
+Q43|Economy|Which bank got RBI approval to convert to Small Finance Bank?|UPI Bank|Fino Payments Bank|State Bank of India|Axis Bank|2
+Q44|National|Which parliamentary act gave IRDAI more powers in 2025?|Sabka Bima Sabki Raksha|Insurance Act|Banking Regulation Act|SEBI Act|1
+Q45|Transport|Which railway class ticket saw a fare hike in Dec 2025?|Ordinary|Business|Rajdhani|Shatabdi|1
+Q46|National|Which day honours “Annadatas” in India?|Farmers’ Day|Teachers’ Day|Labour Day|Youth Day|1
+Q47|Science|Which Indian satellite is among the heaviest launched in 2025?|BlueBird Block-2|Chandrayaan-4|RISAT-3|INSAT-4F|1
+Q48|Governance|Which act streamlined PUC and vehicle clearances in Delhi?|Air Quality Action Plan|GRAP-IV|Clean Air Act|DM Act|2
+Q49|National|Which state govt imposed vehicle entry fuel ban for pollution?|Delhi|Haryana|Punjab|UP|1
+Q50|International|Which type of global unrest affected Bangladesh in Dec 2025?|Environmental|Political|Economic|Sport|2
+
+
+# Format: Q[number]|Category|Question|Option1|Option2|Option3|Option4|CorrectOption(1-4)
+

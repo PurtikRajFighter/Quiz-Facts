@@ -1,0 +1,27 @@
+# Configuration for Quiz and Facts
+# Format: KEY=VALUE
+
+# ==== QUIZ SETTINGS ====
+# Time per question in manual mode (in seconds)
+MANUAL_TIMER_DURATION=15
+
+# Time per question in auto-slide mode (in seconds)
+AUTO_SLIDE_DURATION=15
+
+# Show answer duration in auto-slide mode (in seconds)
+AUTO_SLIDE_ANSWER_DURATION=3
+
+# ==== FACTS SETTINGS ====
+# Enable auto-slide for facts (true/false)
+FACTS_AUTO_SLIDE=false
+
+# Time per fact in auto-slide mode (in seconds)
+FACTS_AUTO_SLIDE_DURATION=20
+
+# ==== AUDIO SETTINGS ====
+# Enable background music (true/false)
+ENABLE_MUSIC=true
+
+# Music volume (0.0 to 1.0)
+MUSIC_VOLUME=0.3
+

@@ -1,0 +1,142 @@
+╔════════════════════════════════════════════════════════════╗
+║       CURRENT AFFAIRS QUIZ - QUICK START GUIDE            ║
+╚════════════════════════════════════════════════════════════╝
+
+🚀 GETTING STARTED
+═══════════════════════════════════════════════════════════════
+
+1. START THE SERVER:
+   Option A (Easy): Double-click "start.sh" or run:
+            ./start.sh
+
+   Option B (Manual): Run in terminal:
+            python3 -m http.server 8000
+
+   Then open: http://localhost:8000
+
+2. EXPLORE THE MODES:
+   📱 Mobile: Tap the menu icon (☰) in top-left corner
+   💻 Desktop: Sidebar is always visible
+
+   Three modes available:
+   🎯 Manual Quiz - Take your time (15s per question)
+   ⚡ Auto-Slide Quiz - Questions auto-advance
+   💡 Amazing Facts - Learn something new
+
+═══════════════════════════════════════════════════════════════
+📝 EDITING CONTENT
+═══════════════════════════════════════════════════════════════
+
+QUESTIONS (questions.txt):
+──────────────────────────────
+Format: Q1|Category|Question|Option1|Option2|Option3|Option4|1
+
+Example:
+Q1|Science|What is H2O?|Water|Air|Fire|Earth|1
+Q2|History|When did WWII end?|1943|1944|1945|1946|3
+
+✓ Use | (pipe) to separate fields
+✓ Correct answer is 1, 2, 3, or 4
+✓ No limit on number of questions
+✓ Lines with # are comments
+
+FACTS (facts.txt):
+──────────────────────────────
+Format: F1|Category|Question|Answer
+
+Example:
+F1|Space|Why is Mars red?|Mars appears red because...
+
+✓ Answer can be as long as needed
+✓ Great for detailed explanations
+
+CONFIGURATION (config.txt):
+──────────────────────────────
+AUTO_SLIDE_DURATION=8           ← Seconds per question
+AUTO_SLIDE_ANSWER_DURATION=3    ← Seconds to show answer
+
+═══════════════════════════════════════════════════════════════
+🎨 FEATURES
+═══════════════════════════════════════════════════════════════
+
+✓ Mobile-first design (shorts/reels style)
+✓ Fully responsive (desktop & mobile)
+✓ Smooth animations
+✓ Score tracking
+✓ Timer with visual countdown
+✓ Instant feedback on answers
+✓ Auto-advance option
+✓ Swipe-friendly navigation
+
+═══════════════════════════════════════════════════════════════
+🔧 CUSTOMIZATION
+═══════════════════════════════════════════════════════════════
+
+1. Add unlimited questions to questions.txt
+2. Add unlimited facts to facts.txt
+3. Adjust auto-slide timing in config.txt
+4. Refresh browser to see changes
+
+═══════════════════════════════════════════════════════════════
+💡 TIPS
+═══════════════════════════════════════════════════════════════
+
+• Use questions_template.txt as reference
+• Use facts_template.txt as reference
+• Test in both mobile and desktop views
+• Keep questions concise for better UX
+• Use varied categories for engagement
+• Backup your content before major edits
+
+═══════════════════════════════════════════════════════════════
+📱 MOBILE OPTIMIZATION
+═══════════════════════════════════════════════════════════════
+
+The app is designed mobile-first:
+• Portrait mode recommended
+• Touch-friendly buttons
+• Swipe navigation in facts mode
+• Optimized font sizes
+• Safe area support (iPhone notch, etc.)
+• No horizontal scrolling
+• Fast loading
+
+═══════════════════════════════════════════════════════════════
+🐛 TROUBLESHOOTING
+═══════════════════════════════════════════════════════════════
+
+❌ Content not loading?
+   → Check file format (use templates as reference)
+   → Look for syntax errors in .txt files
+   → Open browser console (F12) for errors
+
+❌ Sidebar not showing?
+   → On mobile, tap menu icon (☰) top-left
+   → On desktop, it's always visible (left side)
+
+❌ Timer not working?
+   → Check config.txt values are numbers
+   → Refresh the page
+
+═══════════════════════════════════════════════════════════════
+📁 FILE STRUCTURE
+═══════════════════════════════════════════════════════════════
+
+WebsiteCurrentAffairs/
+├── index.html              ← Main HTML
+├── styles.css              ← Styling
+├── script.js               ← App logic
+├── questions.txt           ← EDIT: Your quiz questions
+├── facts.txt              ← EDIT: Your facts
+├── config.txt             ← EDIT: Timing settings
+├── questions_template.txt ← Reference template
+├── facts_template.txt     ← Reference template
+├── start.sh               ← Quick start script
+└── README.md              ← Detailed documentation
+
+═══════════════════════════════════════════════════════════════
+
+Need help? Check README.md for detailed documentation.
+
+Happy quizzing! 🎉
+

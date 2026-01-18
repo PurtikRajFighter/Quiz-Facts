@@ -1,0 +1,33 @@
+# ============================================
+# QUESTIONS TEMPLATE
+# ============================================
+# Format: Q[number]|Category|Question|Option1|Option2|Option3|Option4|CorrectOption(1-4)
+#
+# Instructions:
+# 1. Each question must be on a new line
+# 2. Use | (pipe) as separator between fields
+# 3. Number questions sequentially: Q1, Q2, Q3, etc.
+# 4. CorrectOption must be 1, 2, 3, or 4
+# 5. Lines starting with # are comments and will be ignored
+# 6. No limit on the number of questions
+#
+# Example:
+# Q1|Science|What is H2O?|Water|Air|Fire|Earth|1
+# ============================================
+
+Q1|World Politics|Which country recently became the newest member of the United Nations in 2024?|Palestine|Kosovo|Taiwan|Catalonia|1
+Q2|Technology|What major AI regulation law was passed by the European Union in 2024?|Digital Services Act|AI Ethics Framework|Artificial Intelligence Act|Tech Accountability Law|3
+Q3|Climate & Environment|Which country announced achieving 100% renewable energy for electricity in 2024?|Denmark|Iceland|Costa Rica|Norway|2
+Q4|Space Exploration|Which space agency successfully landed the first crewed mission on Mars in 2025?|NASA|SpaceX|ISRO|This hasn't happened yet|4
+Q5|Economy|What is the name of the digital currency introduced by India's central bank?|Digital Rupee (e-₹)|Crypto Rupee|E-Paisa|Indian Bitcoin|1
+Q6|Sports|Which country hosted the 2024 Summer Olympics?|France|Japan|United States|Brazil|1
+Q7|Health|What breakthrough vaccine was approved by WHO in 2024?|Malaria vaccine|Cancer vaccine|Universal flu vaccine|HIV vaccine|1
+Q8|Entertainment|Which film won the Best Picture at the 2024 Academy Awards?|Oppenheimer|Poor Things|Killers of the Flower Moon|The Zone of Interest|1
+Q9|Science|Which planet did NASA's new telescope discover signs of water on?|Mars|Europa|Titan|K2-18b|4
+Q10|Politics|Who became the youngest Prime Minister in European history in 2024?|Gabriel Attal|Sanna Marin|Sebastian Kurz|Alexander De Croo|1
+
+# ============================================
+# ADD YOUR QUESTIONS BELOW
+# ============================================
+
+
